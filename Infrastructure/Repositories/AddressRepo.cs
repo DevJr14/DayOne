@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Dapper;
 using Infrastructure.Context;
+using Shared.Requests.Address;
 using Shared.Responses.Address;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public Task<int> AddAsync(AddressResponse item)
+        public Task<int> AddAsync(AddressRequest item)
         {
             throw new NotImplementedException();
         }
@@ -47,7 +48,7 @@ namespace Infrastructure.Repositories
             return address;
         }
 
-        public Task<int> UpdateAsync(AddressResponse item)
+        public Task<int> UpdateAsync(AddressRequest item)
         {
             throw new NotImplementedException();
         }
